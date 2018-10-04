@@ -22,7 +22,7 @@ class DockingStation
 
   def dock(bike)
     if @bikes.count < @capacity
-      @bikes << Bike.new
+      @bikes << bike
     else
       fail "This station is at capacity"
     end
